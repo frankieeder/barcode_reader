@@ -3,7 +3,7 @@ from PIL import Image
 from pyzbar.pyzbar import decode
 from pillow_heif import register_heif_opener
 
-register_heif_opener()
+register_heif_opener()  # Needed to open HEIC files, common on new iPhones
 
 st.title("Handy Barcode Scanner")
 st.write("Upload an image below to scan barcodes, "
