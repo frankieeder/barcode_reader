@@ -7,8 +7,8 @@ register_heif_opener()
 
 st.title("Handy Barcode Scanner")
 st.write("Upload an image below to scan barcodes, "
-         "Reveal it's content "
-         "and click to search for the item(s) on a few common websites...")
+         "reveal their content "
+         "and use handy links to search for the item(s) on a few common websites...")
 
 
 st.markdown("---")
