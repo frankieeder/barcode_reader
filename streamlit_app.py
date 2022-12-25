@@ -24,4 +24,4 @@ def display_links(barcode):
 if image is not None:
     barcodes = decode(Image.open(image))
     for barcode in barcodes:
-        display_links(barcode.data)
+        display_links(barcode.data.decode())
