@@ -15,8 +15,9 @@ def display_links(barcode):
     # TODO: Use cookies to allow users to paste their own custom links if needed
     st.header(f"Barcode: {barcode}")
     st.markdown(f"[Search on Amazon](https://www.amazon.com/s?k={barcode})")
-    st.markdown(f"[Search on AbeBooks](https://www.abebooks.com/servlet/SearchResults?kn={barcode})")
     st.markdown(f"[Search on Discogs](https://www.discogs.com/search/?q={barcode})")
+    st.markdown(f"[Search on AbeBooks](https://www.abebooks.com/servlet/SearchResults?kn={barcode})")
+    st.markdown(f"[Search on ThriftBooks](https://www.thriftbooks.com/browse/?b.search={barcode})")
     # TODO: RateYourMusic.com?
 
 
