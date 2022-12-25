@@ -7,7 +7,7 @@ st.write("Upload an image below to scan barcodes, and search for the item(s) on 
 
 
 st.markdown("---")
-image = st.file_uploader("Upload photo here", label_visibility=False)
+image = st.file_uploader("Upload photo here", label_visibility='hidden')
 st.markdown("---")
 
 
