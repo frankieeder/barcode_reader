@@ -6,7 +6,9 @@ from pillow_heif import register_heif_opener
 register_heif_opener()
 
 st.title("Handy Barcode Scanner")
-st.write("Upload an image below to scan barcodes, and search for the item(s) on a few common websites...")
+st.write("Upload an image below to scan barcodes,"
+         "Reveal it's content "
+         "and click to search for the item(s) on a few common websites...")
 
 
 st.markdown("---")
@@ -28,3 +30,6 @@ if image is not None:
     barcodes = decode(Image.open(image))
     for barcode in barcodes:
         display_links(barcode.data.decode())
+
+    if not barcodes:
+        st.warning("No barcodes found, please try again and ensure any barcodes are clearly visible.")
