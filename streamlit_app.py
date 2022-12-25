@@ -7,7 +7,7 @@ register_heif_opener()  # Needed to open HEIC files, common on new iPhones
 
 st.title("Handy Barcode Scanner")
 st.write("Upload an image below to scan barcodes, "
-         "reveal their content "
+         "reveal their content, "
          "and use handy links to search for the item(s) on a few common websites...")
 
 
