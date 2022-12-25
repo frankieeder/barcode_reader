@@ -28,7 +28,7 @@ def display_links(barcode):
 
 if image is not None:
     im = Image.open(image)
-    im_greyscale = im.convert('L')  # Convert to greyscale to enforce HEIC data
+    im_greyscale = im.convert('RGB')  # Convert to greyscale to enforce HEIC data
     barcodes = decode(im_greyscale)
     for barcode in barcodes:
         display_links(barcode.data.decode())
