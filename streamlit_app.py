@@ -1,6 +1,9 @@
 import streamlit as st
 from PIL import Image
 from pyzbar.pyzbar import decode
+from pillow_heif import register_heif_opener
+
+register_heif_opener()
 
 st.title("Handy Barcode Scanner")
 st.write("Upload an image below to scan barcodes, and search for the item(s) on a few common websites...")
